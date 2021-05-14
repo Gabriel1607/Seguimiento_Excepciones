@@ -51,11 +51,12 @@ if(compFigures==2) {
 if(noColor) {
 	app.fill(255,0,0);
 	app.textSize(30);
-	app.text("¡Selecciona un color!",597,552);	
+	app.text("¡Selecciona un color para cada figura!",597,552);	
 }
 }
 	
 	public void compareFigure() {
+		
 		if(sR==cR&&sG==cG&&sB==cB) {
 			compFigures=1;
 		}
@@ -70,10 +71,10 @@ if(noColor) {
 		
 		
 		try {
-			if(sR==255 && sG==255 && sB==255 && cG==255 && cR==255 && cG==255) {
+			if(sR==255 && sG==255 && sB==255 || cG==255 && cR==255 && cG==255) {
 				noColor = true;
 				compFigures=0;
-				throw new ValidationColor("¡Selecciona un color!");
+				throw new ValidationColor("¡Selecciona un color para cada figura!");
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
