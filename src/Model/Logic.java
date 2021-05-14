@@ -16,7 +16,7 @@ public class Logic {
 		sR=255;
 		sG=255;
 		sB=255;
-		cR=254;
+		cR=255;
 		cG=255;
 		cB=255;
 	}
@@ -201,7 +201,7 @@ if(compFigures==2) {
 				sR=255;
 				sG=255;
 				sB=255;
-				cR=254;
+				cR=255;
 				cG=255;
 				cB=255;
 				figure=null;
@@ -210,6 +210,7 @@ if(compFigures==2) {
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 			noFigSelect=true;
+			compFigures = 0;
 				}
 		
 	}
