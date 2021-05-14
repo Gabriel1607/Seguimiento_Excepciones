@@ -70,15 +70,7 @@ if(noColor) {
 		}
 		
 		
-		try {
-			if(sR==255 && sG==255 && sB==255 || cG==255 && cR==255 && cG==255) {
-				noColor = true;
-				compFigures=0;
-				throw new ValidationColor("¡Selecciona un color para cada figura!");
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+		
 		
 		
 		
@@ -112,8 +104,8 @@ if(noColor) {
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Amarillo
-					sR=255;
-					sG=255;
+					sR=254;
+					sG=254;
 					sB=1;
 					noColor = false;
 				}
@@ -185,8 +177,8 @@ if(noColor) {
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Amarillo
-					cR=255;
-					cG=255;
+					cR=254;
+					cG=254;
 					cB=1;
 					noColor = false;
 				}
@@ -243,8 +235,18 @@ if(noColor) {
 			}
 			//Botón de comparar
 			if((20.05<app.mouseX&&app.mouseX<20.05+197.84)&&(629.66<app.mouseY&&app.mouseY<629.66+47.96)) {
+				try {
+					if((sR==255 && sG==255 && sB==255) || (cG==255 && cR==255 && cG==255)) {
+						noColor = true;
+						compFigures=0;
+						throw new ValidationColor("¡Selecciona un color para cada figura!");
+					}else{
+						compareFigure();
+					}
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
 				
-				compareFigure();
 			}
 			//Botón de Limpiar
 			if((252.07<app.mouseX&&app.mouseX<252.07+197.87)&&(629.66<app.mouseY&&app.mouseY<629.66+47.96)) {
