@@ -15,6 +15,7 @@ public class Controller {
 		logic.drawFigure();
 
 	}
+
 	public void mousePressed() {
 		logic.mousePressed();
 	}

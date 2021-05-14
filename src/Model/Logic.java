@@ -8,6 +8,7 @@ public class Logic {
 	int cR,cG,cB;
 	int sR,sG,sB;
 	boolean noFigSelect;
+	int compFigures;
 	String figure;
 	public Logic(PApplet app) {
 		this.app = app;
@@ -15,7 +16,7 @@ public class Logic {
 		sR=255;
 		sG=255;
 		sB=255;
-		cR=255;
+		cR=254;
 		cG=255;
 		cB=255;
 	}
@@ -31,10 +32,26 @@ if(noFigSelect) {
 	app.textSize(30);
 	app.text("¡Primero debes seleccionar una figura!",597,552);	
 }
+
+if(compFigures==1) {
+	app.fill(0,110,0);
+	app.textSize(30);
+	app.text("¡Las figuras coinciden!",597,552);	
+}
+if(compFigures==2) {
+	app.fill(255,0,0);
+	app.textSize(30);
+	app.text("¡Las figuras NO coinciden!",597,552);	
+}
 }
 	
-	public void paintFigure() {
-		
+	public void compareFigure() {
+		if(sR==cR&&sG==cG&&sB==cB) {
+			compFigures=1;
+		}
+		else {
+			compFigures=2;
+		}
 	}
 	public void mousePressed() {
 		if(PApplet.dist(app.mouseX,app.mouseY,761,243)<100) {
@@ -173,11 +190,28 @@ if(noFigSelect) {
 				}
 				break;
 			}
+			//Botón de comparar
+			if((20.05<app.mouseX&&app.mouseX<20.05+197.84)&&(629.66<app.mouseY&&app.mouseY<629.66+47.96)) {
+				
+				compareFigure();
+			}
+			//Botón de Limpiar
+			if((252.07<app.mouseX&&app.mouseX<252.07+197.87)&&(629.66<app.mouseY&&app.mouseY<629.66+47.96)) {
+				
+				sR=255;
+				sG=255;
+				sB=255;
+				cR=254;
+				cG=255;
+				cB=255;
+				figure=null;
+			}
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 			noFigSelect=true;
 				}
+		
 	}
 }
 
