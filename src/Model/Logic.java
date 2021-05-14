@@ -94,6 +94,7 @@ if(noColor) {
 					sG=0;
 					sB=2;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Naranja
@@ -101,6 +102,7 @@ if(noColor) {
 					sG=121;
 					sB=0;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Amarillo
@@ -108,6 +110,7 @@ if(noColor) {
 					sG=254;
 					sB=1;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((289<app.mouseX&&app.mouseX<289+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Verde
@@ -115,6 +118,7 @@ if(noColor) {
 					sG=226;
 					sB=18;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((377<app.mouseX&&app.mouseX<377+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Azul
@@ -122,6 +126,7 @@ if(noColor) {
 					sG=79;
 					sB=255;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((24<app.mouseX&&app.mouseX<24+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Violeta
@@ -129,6 +134,7 @@ if(noColor) {
 					sG=32;
 					sB=163;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Fucsia
@@ -136,6 +142,7 @@ if(noColor) {
 					sG=0;
 					sB=243;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Negro
@@ -143,6 +150,7 @@ if(noColor) {
 					sG=0;
 					sB=0;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((289<app.mouseX&&app.mouseX<289+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Gris
@@ -150,6 +158,7 @@ if(noColor) {
 					sG=122;
 					sB=122;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((377<app.mouseX&&app.mouseX<377+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Beige
@@ -157,6 +166,7 @@ if(noColor) {
 					sG=212;
 					sB=157;
 					noColor = false;
+					compFigures = 0;
 				}
 				
 				break;
@@ -167,6 +177,7 @@ if(noColor) {
 					cG=0;
 					cB=2;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Naranja
@@ -174,6 +185,7 @@ if(noColor) {
 					cG=121;
 					cB=0;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Amarillo
@@ -181,6 +193,7 @@ if(noColor) {
 					cG=254;
 					cB=1;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((289<app.mouseX&&app.mouseX<289+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Verde
@@ -188,6 +201,7 @@ if(noColor) {
 					cG=226;
 					cB=18;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((377<app.mouseX&&app.mouseX<377+69)&&(430<app.mouseY&&app.mouseY<430+68)) {
 					//Azul
@@ -195,6 +209,7 @@ if(noColor) {
 					cG=79;
 					cB=255;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((24<app.mouseX&&app.mouseX<24+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Violeta
@@ -202,6 +217,7 @@ if(noColor) {
 					cG=32;
 					cB=163;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Fucsia
@@ -209,6 +225,7 @@ if(noColor) {
 					cG=0;
 					cB=243;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Negro
@@ -216,6 +233,7 @@ if(noColor) {
 					cG=0;
 					cB=0;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((289<app.mouseX&&app.mouseX<289+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Gris
@@ -223,6 +241,7 @@ if(noColor) {
 					cG=122;
 					cB=122;
 					noColor = false;
+					compFigures = 0;
 				}
 				if((377<app.mouseX&&app.mouseX<377+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Beige
@@ -230,6 +249,7 @@ if(noColor) {
 					cG=212;
 					cB=157;
 					noColor = false;
+					compFigures = 0;
 				}
 				break;
 			}
@@ -258,12 +278,15 @@ if(noColor) {
 				cG=255;
 				cB=255;
 				figure=null;
+				compFigures=0;
+				noColor=false;
 			}
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 			noFigSelect=true;
 			compFigures = 0;
+			noColor=false;
 				}
 		
 	}
