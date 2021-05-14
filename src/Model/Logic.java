@@ -1,5 +1,6 @@
 package Model;
 
+import exception.ValidationFigure;
 import processing.core.PApplet;
 import processing.core.PConstants;
 
@@ -50,8 +51,18 @@ if(compFigures==2) {
 			compFigures=1;
 		}
 		else {
-			compFigures=2;
+			
+			try {
+				compFigures=2;
+				throw new ValidationFigure ("¡Las figuras NO coinciden!");
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+			
+
 		}
+		
+		
 	}
 	public void mousePressed() {
 		if(PApplet.dist(app.mouseX,app.mouseY,761,243)<100) {
