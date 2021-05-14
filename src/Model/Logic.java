@@ -7,9 +7,17 @@ public class Logic {
 	private PApplet app;
 	int cR,cG,cB;
 	int sR,sG,sB;
+	boolean noFigSelect;
 	String figure;
 	public Logic(PApplet app) {
 		this.app = app;
+		noFigSelect=false;
+		sR=255;
+		sG=255;
+		sB=255;
+		cR=255;
+		cG=255;
+		cB=255;
 	}
 	public void drawFigure() {
 		app.ellipseMode(PConstants.CORNER);
@@ -18,17 +26,24 @@ public class Logic {
 		app.fill(cR,cG,cB);
 		app.circle(660,150,200);
 		//System.out.println(app.mouseX+" "+app.mouseY);
-
-	}
+if(noFigSelect) {
+	app.fill(255,0,0);
+	app.textSize(30);
+	app.text("¡Primero debes seleccionar una figura!",597,552);	
+}
+}
+	
 	public void paintFigure() {
 		
 	}
 	public void mousePressed() {
 		if(PApplet.dist(app.mouseX,app.mouseY,761,243)<100) {
 					figure="circle";
+					noFigSelect=false;
 				}
 		if((330<app.mouseX&&app.mouseX<330+200)&&(150<app.mouseY&&app.mouseY<150+200)) {
 			figure="square";
+			noFigSelect=false;
 		}
 		try {
 			switch(figure) {
@@ -161,7 +176,8 @@ public class Logic {
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
-		}
+			noFigSelect=true;
+				}
 	}
 }
 
