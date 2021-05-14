@@ -103,9 +103,9 @@ if(compFigures==2) {
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Fucsia
-					sR=213;
+					sR=255;
 					sG=0;
-					sB=250;
+					sB=243;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Negro
@@ -166,9 +166,9 @@ if(compFigures==2) {
 				}
 				if((113<app.mouseX&&app.mouseX<113+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Fucsia
-					cR=213;
+					cR=255;
 					cG=0;
-					cB=250;
+					cB=243;
 				}
 				if((201<app.mouseX&&app.mouseX<201+69)&&(527<app.mouseY&&app.mouseY<527+68)) {
 					//Negro
